@@ -14,7 +14,7 @@ The code for each module is a slight variation of the original code from [dimitr
 
 1. Check - WORKING AND ACCESSIBLE JACKETT INSTANCE. Configure some Indexers there. For example: AniLibria
 
-2. Download respective modules from [dlm folder](/dlm) for each indexer you'd like to use in Download Station. Example: [dlm/Anilibria-Jackett.dlm](/dlm/Anilibria-Jackett.dlm)
+2. Download respective modules from [dlm folder](https://github.com/DeXP/Jackett-Indexers.dlm/tree/master/dlm) for each indexer you'd like to use in Download Station. Example: [dlm/Anilibria-Jackett.dlm](https://github.com/DeXP/Jackett-Indexers.dlm/tree/master/dlm/Anilibria-Jackett.dlm)
 
 3. Install and enable to your Download Station -> Settings -> BT Search -> Add
 
@@ -40,7 +40,7 @@ Tested on Synology DSM 6.1-6.2 and 7.2.1
 
 (optional) Download and replace `indexers.json` from your Jackett instance: http://your_jackett_server/api/v2.0/indexers
 
-Call the `generate.py` - it will create/update the [dlm](/dlm) folder for you.
+Call the `generate.py` - it will create/update the [dlm](https://github.com/DeXP/Jackett-Indexers.dlm/tree/master/dlm) folder for you.
 
 ```bash
 python3 generate.py
