@@ -1,5 +1,5 @@
 # Jackett-Indexers.dlm
-Download Station search modules for Jackett (https://github.com/Jackett/Jackett) - individual module per Jackett indexer.
+Download Station search modules for [Jackett](https://github.com/Jackett/Jackett) - individual module per Jackett indexer.
 
 The goal is to have the results displaying a correct Site column. And getting the results faster - per indexer, not all the info at a time.
 

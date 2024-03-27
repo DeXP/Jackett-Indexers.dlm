@@ -4,7 +4,7 @@ import json, tarfile, os, io
 
 print("Get your indexers.json from: http://your_jackett_server/api/v2.0/indexers")
 
-with open('indexers.json') as json_file:
+with open('indexers.json', encoding='utf-8') as json_file:
     indexers = json.load(json_file)
 
     if not os.path.isdir("dlm"):
@@ -16,11 +16,6 @@ with open('indexers.json') as json_file:
         name = ind["name"]
         site = ind["site_link"]
         className = f"SynoDLMSearch{gid}Jackett"
-
-        # Hacks
-        page = "$child->guid"
-        if cid == "anilibria":
-            page = "$child->comments"
 
         info = {
             "name": cid,
@@ -117,7 +112,7 @@ class """ + className + """
       $download = (string) $child->link;
       $size = (double) $child->size;
       $datetime = date('Y-m-d H:i:s', strtotime($child->pubDate));
-      $page = (string) """ + page + """;
+      $page = (string) $child->comments;
       $hash = md5($count . $download);
 
       $plugin->addResult($title, $download, $size, $datetime, $page, $hash, $seeders, $leechs, array_shift($categories));
