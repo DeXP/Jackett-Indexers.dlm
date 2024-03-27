@@ -3,14 +3,14 @@ Download Station search modules for [Jackett](https://github.com/Jackett/Jackett
 
 The goal is to have the results displaying a correct Site column. And getting the results faster - per indexer, not all the info at a time.
 
-![Synology Download Station Search BT results](/screenshots/Download-Station.png?raw=true "Synology Download Station Search BT results")
+![Synology Download Station Search BT results](https://raw.githubusercontent.com/DeXP/Jackett-Indexers.dlm/master/screenshots/Download-Station.png?raw=true "Synology Download Station Search BT results")
 
 The code for each module is a slight variation of the original code from [dimitrov-adrian/jackett.dlm](https://github.com/dimitrov-adrian/jackett.dlm)
 
 
 ## Installation
 
-![Synology Download Station BT Search configuration](/screenshots/BT-Search-Settings.png?raw=true "Synology Download Station BT Search configuration")
+![Synology Download Station BT Search configuration](https://raw.githubusercontent.com/DeXP/Jackett-Indexers.dlm/master/screenshots/BT-Search-Settings.png?raw=true "Synology Download Station BT Search configuration")
 
 1. Check - WORKING AND ACCESSIBLE JACKETT INSTANCE. Configure some Indexers there. For example: AniLibria
 
@@ -28,7 +28,7 @@ The code for each module is a slight variation of the original code from [dimitr
 
 7. Click OK
 
-![Synology Download Station Search BT results](/screenshots/Edit-AniLibria.png?raw=true "Synology Download Station Search BT results")
+![Synology Download Station Search BT results](https://raw.githubusercontent.com/DeXP/Jackett-Indexers.dlm/master/screenshots/Edit-AniLibria.png?raw=true "Synology Download Station Search BT results")
 
 
 ## Compatibility
