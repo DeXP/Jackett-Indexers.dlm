@@ -7,6 +7,8 @@ print("Get your indexers.json from: http://your_jackett_server/api/v2.0/indexers
 with open('indexers.json', encoding='utf-8') as json_file:
     indexers = json.load(json_file)
 
+    print(f"Total indexres amount: {len(indexers)}")
+
     if not os.path.isdir("dlm"):
         os.mkdir("dlm") 
 
@@ -167,4 +169,4 @@ class """ + className + """
             tar.addfile(tarInfo, io.BytesIO(infoStr.encode('utf8')))
             tar.addfile(tarSearch, io.BytesIO(searchCode.encode('utf8')))
 
-        print(f"{cid} - {name}")
+        print(f"- [{name}](https://github.com/DeXP/Jackett-Indexers.dlm/raw/master/dlm/{gid}-Jackett.dlm)")
