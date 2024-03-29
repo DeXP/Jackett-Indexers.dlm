@@ -1,4 +1,5 @@
 # Jackett-Indexers.dlm
+
 Download Station search modules for [Jackett](https://github.com/Jackett/Jackett) - individual module per Jackett indexer.
 
 The goal is to have the results displaying a correct Site column. And getting the results faster - per indexer, not all the info at a time.
@@ -14,7 +15,7 @@ The code for each module is a slight variation of the original code from [dimitr
 
 1. Check - WORKING AND ACCESSIBLE JACKETT INSTANCE. Configure some Indexers there. For example: AniLibria
 
-2. Download respective modules from [dlm folder](https://github.com/DeXP/Jackett-Indexers.dlm/tree/master/dlm) for each indexer you'd like to use in Download Station. Example: [dlm/Anilibria-Jackett.dlm](https://github.com/DeXP/Jackett-Indexers.dlm/tree/master/dlm/Anilibria-Jackett.dlm)
+2. Download respective module for each indexer you'd like to use in Download Station. Example: [dlm/Anilibria-Jackett.dlm](https://github.com/DeXP/Jackett-Indexers.dlm/raw/master/dlm/Anilibria-Jackett.dlm)
 
 3. Install and enable to your Download Station -> Settings -> BT Search -> Add
 
