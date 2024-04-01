@@ -36,10 +36,14 @@ The code for each module is a slight variation of the original code from [dimitr
 
 Tested on Synology DSM 6.1-6.2 and 7.2.1; Jackett v0.21.2212
 
+DS Get 1.12.5 on Android 14
+
+![DS Get 1.12.5 BT Search](https://raw.githubusercontent.com/DeXP/Jackett-Indexers.dlm/master/screenshots/Android-BT-Search.png?raw=true "DS Get 1.12.5 BT Search")
+
 
 ## Building (optional)
 
-Building is needed only if you would like to generate the output on your computer. You can skip tp `Download` section otherwise
+Building is needed only if you would like to generate the output on your computer. You can skip to `Download` section otherwise.
 
 (optional) Download and replace `indexers.json` from your Jackett instance: http://your_jackett_server/api/v2.0/indexers
 
