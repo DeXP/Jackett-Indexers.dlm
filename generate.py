@@ -7,7 +7,7 @@ print("Get your indexers.json from: http://your_jackett_server/api/v2.0/indexers
 with open('indexers.json', encoding='utf-8') as json_file:
     indexers = json.load(json_file)
 
-    print(f"Total indexres amount: {len(indexers)}")
+    print(f"Total indexers amount: {len(indexers)}")
 
     if not os.path.isdir("dlm"):
         os.mkdir("dlm") 
