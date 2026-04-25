@@ -17,7 +17,7 @@ with open('indexers.json', encoding='utf-8') as json_file:
         gid = cid.capitalize()
         name = ind["name"]
         site = ind["site_link"]
-        className = f"SynoDLMSearch{gid}Jackett"
+        className = f"SynoDLMSearch{gid}Jackett".replace("-", "_")
 
         info = {
             "name": cid,
