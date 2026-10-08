@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import json, tarfile, os, io
+import json, tarfile, os, re, io
 
 print("Get your indexers.json from: http://your_jackett_server/api/v2.0/indexers")
 
@@ -14,7 +14,20 @@ with open('indexers.json', encoding='utf-8') as json_file:
 
     for ind in indexers:
         cid = ind["id"]
-        gid = cid.capitalize()
+
+        # 1. Replace any non-alphanumeric character with an underscore
+        gid = re.sub(r'[^a-zA-Z0-9]', '_', cid)
+        
+        # 2. PHP class names cannot start with a number, so prepend an underscore if it does
+        if gid and gid[0].isdigit():
+            gid = '_' + gid
+            
+        # 3. Capitalize the first letter to maintain the original naming style (e.g., SynoDLMSearchNoname_clubJackett)
+        if gid:
+            gid = gid.capitalize()
+        else:
+            gid = "Unknown"
+
         name = ind["name"]
         site = ind["site_link"]
         className = f"SynoDLMSearch{gid}Jackett"
